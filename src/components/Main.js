@@ -32,7 +32,9 @@ function Main() {
                     </Item>
                 </Grid>
                 <Grid item xs={6} >
-                    <Item sx={{ height: "90%" }}>Include a photo or video here</Item>
+                    {/* <Item sx={{ height: "90%" }}> */}
+                        <img src='demoimg' alt= "IMG"></img>
+                    {/* </Item> */}
                 </Grid>
                 <Grid item xs={6}>
                     <Item sx={{ height: "90%" }}>

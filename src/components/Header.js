@@ -36,7 +36,7 @@ function Header() {
   // };
 
   return (
-    <AppBar position="static" color='transparent'>
+    <AppBar position="static"  sx={{ backgroundColor: 'orange' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -84,12 +84,13 @@ function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' , fontWeight: 500},
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page} onClick={handleCloseNavMenu}  sx={{ fontWeight: 'bold' }}>
+                  {/* <Typography textAlign="center" >{page}</Typography> */}
+                  <h2>{page}</h2>
                 </MenuItem>
               ))}
             </Menu>
